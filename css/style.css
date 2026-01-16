@@ -1,0 +1,764 @@
+@charset "utf-8";
+
+/*トップページ*/
+
+body {
+    color: #484848;
+    line-height: 1.5;
+}
+
+header,
+nav,
+article,
+#main,
+#mainvisual,
+footer {
+    margin: 0 auto;
+    width: 900px;
+}
+
+header {
+    height: 150px;
+    overflow: hidden;
+}
+
+
+#mainvisual {
+    background-image: url(../image/top.png);
+    background-position: center top;
+    background-size: cover;
+    color: #ffffff;
+    text-shadow: 0 5px 5px #ed6d46;
+    font-weight: bold;
+    font-size: 30px;
+    height: 500px;
+    margin-top: 100px;
+    opacity: 0.9;
+
+}
+
+#text1 {
+    position: relative;
+    top: 90px;
+    left: 300px;
+}
+
+#text2 {
+    position: relative;
+    top: 110px;
+    left: 500px;
+}
+
+
+#top {
+    float: left;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+}
+
+nav ul li {
+    background-color: #eda48e;
+    width: 100px;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    margin: 50px 20px 0 20px;
+    border-radius: 10px;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul li:hover {
+    background-color: #ede5be;
+}
+
+#main {
+    clear: both;
+    margin-top: 10px;
+}
+
+#main p {
+    line-height: 2.0;
+}
+
+
+/* ハンバーガーメニュー */
+
+#sp_gnavi_check {
+    display: none;
+}
+
+
+
+/* 自己紹介 */
+
+table {
+    border-spacing: 8px 8px;
+}
+
+#shokai h2 {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+#shokai img {
+    float: left;
+}
+
+#shokai table th {
+    background-color: #ede5be98;
+    border-radius: 40px;
+    padding: 0 15px;
+}
+
+#shokai table td {
+    padding: 10px;
+    border-bottom: 3px dashed #e6c0c0;
+}
+
+footer {
+    clear: both;
+    text-align: right;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+/* 記事ページフォーマット */
+article h1 {
+    color: #484848;
+    opacity: 0.8;
+    background: linear-gradient(to left, #fff, #e6c0c0);
+    padding-left: 15px;
+    border-left: 15px solid rgb(137, 117, 90);
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+
+
+/*成長記録*/
+
+#kiroku_card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 0 auto;
+    padding: 1rem 1rem 3rem 1rem;
+    max-width: 900px;
+    text-align: center;
+}
+
+.card {
+    flex-basis: calc((100% - 50px * 2) / 3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-wrap: break-word;
+    background-color: #fff3f3c9;
+    color: #333333;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.card_img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card_cont {
+    padding: 10px 12px;
+    text-align: left;
+}
+
+.card_cont h2 {
+    color: #484848;
+    opacity: 0.8;
+    text-align: center;
+    margin-top: 10px;
+    margin-top: 10px;
+}
+
+.card_cont h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.card_cont_day {
+    font-size: smaller;
+    font-weight: 700;
+    color: #888888;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.card_cont_summary {
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    border-top: 3px dashed #ede5be;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+/* 1か月ごとのギャラリー */
+
+#month {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#month span {
+    border-top: 8px dotted #e6c0c0;
+    border-bottom: 8px dotted #e6c0c0;
+    padding: 20px 80px;
+}
+
+.gallery_box figure {
+    margin: 0 30px 70px 0;
+    width: 280px;
+    float: left;
+}
+
+.gallery_box figure:nth-child(3) {
+    margin-right: 0;
+}
+
+figcaption {
+    background-color: #e5db8f85;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.img-item {
+    opacity: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+#right {
+    color: #ed6d46;
+    text-align: right;
+}
+
+#return {
+    text-decoration: none;
+    color: #ed6d46;
+    padding: 3px;
+}
+
+#return:hover {
+    border: 0;
+    border-bottom: 2px solid #ed6d46;
+}
+
+
+/* 日記 */
+
+#mokuji {
+    max-width: 400px;
+    margin: 1rem auto;
+    border: 2px solid #e6c0c0;
+    border-radius: 4px;
+}
+
+#mokuji a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #484848;
+}
+
+#mokuji ul {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#mokuji li {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+#mokuji li:hover {
+    background-color: #dadada;
+}
+
+#mokuji_title:checked~#mokuji_inner li {
+    height: 38px;
+    opacity: 1;
+}
+
+#mokuji input {
+    display: none;
+}
+
+#mokuji label {
+    display: block;
+    padding: 10px 15px;
+    background-color: #e6c0c0;
+    cursor: pointer;
+}
+
+#dialy h2 {
+    background-color: #e5db8f85;
+    clear: both;
+    margin-top: 50px;
+}
+
+
+.dialy_photo {
+    float: right;
+    margin-right: 40px;
+}
+
+#dialy p:nth-of-type(even) {
+    float: left;
+    width: 500px;
+    height: 380.43px;
+    margin-left: 40px;
+}
+
+.title {
+    margin-left: 30px;
+}
+
+#taiju {
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+/* おすすめ */
+
+.photo {
+    text-align: center;
+}
+
+#osusume a {
+    position: relative;
+    left: 270px;
+}
+
+#osusume h2 {
+    text-align: center;
+    margin-top: 80px;
+    padding: 20px 0;
+}
+
+#osusume h2 span {
+    border-top: 8px dotted #e6c0c0;
+    border-bottom: 8px dotted #e6c0c0;
+    padding: 20px 80px;
+}
+
+#osusume h3 {
+    background-color: #e5db8f85;
+    text-align: center;
+}
+
+#osusume p {
+    text-align: center;
+}
+
+#osusume p span:nth-of-type(odd) {
+    border-bottom: 5px solid #f4c57f;
+    padding: 0 10px;
+}
+
+#osusume p:nth-of-type(even) {
+    width: 320px;
+    text-align: left;
+    margin-left: 60px;
+}
+
+
+
+#food1,
+#osanpo1 {
+    width: 430px;
+    height: 600px;
+    float: left;
+}
+
+#food2,
+#osanpo2 {
+    width: 430px;
+    height: 600px;
+    float: right;
+}
+
+#food_box,
+#osanpo_box {
+    overflow: hidden;
+}
+
+
+/* ページの先頭へ戻る */
+
+#pagetop {
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    background-color: #ffffff;
+    border: 2px solid #ed6d46;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 100;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagetop:hover {
+    background-color: #fffae3;
+}
+
+#pagetop_inner {
+    height: 15px;
+    width: 15px;
+    border-top: 3px solid #ed6d46;
+    border-right: 3px solid #ed6d46;
+    transform: translate(0, 20%) rotate(-45deg);
+}
+
+
+
+
+/* 900px以下の場合 */
+@media(max-width: 900px) {
+
+    header,
+    nav,
+    article,
+    #main,
+    #mainvisual,
+    footer {
+        width: 700px;
+    }
+
+    nav ul li {
+        margin-left: 8px;
+        margin-right: 8px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    #mainvisual {
+        margin-top: 100px;
+    }
+
+    #text1 {
+        position: relative;
+        top: 50px;
+        left: 150px;
+    }
+
+    #text2 {
+        position: relative;
+        top: 80px;
+        left: 300px;
+    }
+
+    #main p {
+        width: 700px;
+    }
+
+    .card {
+        flex-basis: calc((100% - 50px) / 2);
+    }
+
+    #kiroku_card {
+        padding: 60px;
+    }
+
+    .dialy_photo {
+        width: 600px;
+        text-align: center;
+    }
+
+    #dialy p:nth-of-type(even) {
+        width: 450px;
+        height: 200px;
+        padding-left: 90px;
+    }
+
+
+    #food1,
+    #osanpo1 {
+        width: 300px;
+    }
+
+    #food2,
+    #osanpo2 {
+        width: 300px;
+    }
+
+    #food_box,
+    #osanpo_box {
+        overflow: hidden;
+    }
+
+    #osusume p span:nth-of-type(odd) {
+        font-size: small;
+    }
+
+
+    #osusume p:nth-of-type(even) {
+        width: 300px;
+        height: 500px;
+        text-align: left;
+        margin-left: 0;
+        line-height: 1.8;
+    }
+
+    .gallery_box {
+        width: 700px;
+    }
+
+    .gallery_box img,
+    figcaption {
+        width: 250px;
+    }
+
+    figure {
+        margin-top: auto;
+        margin-bottom: 50px;
+    }
+
+    .gallery_box figure:first-child {
+        margin-left: 80px;
+    }
+
+    .gallery_box figure:nth-child(3) {
+        margin-left: 230px;
+    }
+
+    #return {
+        clear: both;
+    }
+
+}
+
+
+
+
+
+
+/* 700px以下の場合 */
+/*
+@media(max-width: 600px) {
+
+    header,
+    nav,
+    article,
+    #main,
+    #mainvisual,
+    footer {
+        width: 470px;
+        
+    }
+
+
+    #text1 {
+        position: relative;
+        top: 50px;
+        left: 75px;
+        font-size: x-large;
+    }
+
+    #text2 {
+        position: relative;
+        top: 55px;
+        left: 100px;
+        font-size: x-large;
+    }
+
+    #main p {
+        width: 450px;
+    }
+
+    
+
+    .card {
+        flex-basis: calc((100% - 50px) / 2);
+    }
+
+    #kiroku_card {
+        padding: 60px;
+    }
+
+    .dialy_photo {
+        width: 600px;
+        text-align: center;
+    }
+
+    #dialy p:nth-of-type(even) {
+        width: 450px;
+        height: 200px;
+        padding-left: 90px;
+    }
+
+
+    #food1,
+    #osanpo1 {
+        width: 300px;
+    }
+
+    #food2,
+    #osanpo2 {
+        width: 300px;
+    }
+
+    #food_box,
+    #osanpo_box {
+        overflow: hidden;
+    }
+
+    #osusume p span:nth-of-type(odd) {
+        font-size: small;
+    }
+
+
+    #osusume p:nth-of-type(even) {
+        width: 300px;
+        height: 500px;
+        text-align: left;
+        margin-left: 0;
+        line-height: 1.8;
+    }
+
+    .gallery_box {
+        width: 700px;
+    }
+
+    .gallery_box img,
+    figcaption {
+        width: 250px;
+    }
+
+    figure {
+        margin-top: auto;
+        margin-bottom: 50px;
+    }
+
+    .gallery_box figure:first-child {
+        margin-left: 80px;
+    }
+
+    .gallery_box figure:nth-child(3) {
+        margin-left: 230px;
+    }
+
+    #return {
+        clear: both;
+    }
+
+
+
+
+
+
+    /* ハンバーガーボタン部分 */
+/*
+    #sp_gnavi_btn {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        height: 45px;
+        width: 45px;
+        background-color: #eda48e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 200;
+    }
+
+    #sp_gnavi_btn span,
+    #sp_gnavi_btn span::before,
+    #sp_gnavi_btn span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        transition: all 0.6s ease-in-out;
+    }
+
+    #sp_gnavi_btn span::before {
+        bottom: 8px;
+    }
+
+    #sp_gnavi_btn span::after {
+        top: 8px;
+    }
+
+    #sp_gnavi_check:checked ~ #sp_gnavi_btn span {
+        background-color: transparent;
+    }
+
+    #sp_gnavi_check:checked ~ #sp_gnavi_btn span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+
+    #sp_gnavi_check:checked ~ #sp_gnavi_btn span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    */
+
+
+/* ハンバーガーメニューナビゲーションメニュー */
+
+/*
+    #gnavi {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        padding-top: 100px;
+        background-color: rgba(255, 255, 255, 0.8);
+        z-index: 100;
+        transition: all 0.6s ease-in-out;
+    }
+
+    #sp_gnavi_check:checked ~ #gnavi {
+        left: 0%;
+    }
+
+
+    #gnavi > ul > li {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+
+    #gnavi ul li a {
+        width: 100%;
+        color: #fff;
+    }
+
+
+
+}
+*/

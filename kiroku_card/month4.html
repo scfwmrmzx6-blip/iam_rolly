@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>わたしはローリィー</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1><a id="top" href="../index.html"><img src="../image/logo.png" alt="わたしはローリィー"></a></h1>
+        <nav>
+            <ul>
+                <li id="nav_index"><a href="../index.html">自己紹介</a></li>
+                <li id="nav_kiroku"><a href="../kiroku.html">成長記録</a></li>
+                <li id="nav_dialy"><a href="../dialy.html">日記</a></li>
+                <li id="nav_osusume"><a href="../osusume.html">おすすめ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <h2 id="month"><span>わたしの4か月のようす</span></h2>
+
+        <div class="gallery_box">
+            <figure class="img-item">
+                <img src="../image/month4_1.jpg" alt="">
+                <figcaption>オレンジのハーネスが似合う！</figcaption>
+            </figure>
+            <figure class="img-item">
+                <img src="../image/month4_2.jpg" alt="">
+                <figcaption>ドッグラン監視員</figcaption>
+            </figure>
+            <figure class="img-item">
+                <img src="../image/month4_3.jpg" alt="">
+                <figcaption>おててしまって寝てる</figcaption>
+            </figure>
+
+            <div class="gallery_box">
+                <figure class="img-item">
+                    <img src="../image/month4_4.jpg" alt="">
+                    <figcaption>落ち葉がきれいだね</figcaption>
+                </figure>
+                <figure class="img-item">
+                    <img src="../image/month4_5.jpg" alt="">
+                    <figcaption>盗み食いだめ！</figcaption>
+                </figure>
+                <figure class="img-item">
+                    <img src="../image/month4_6.jpg" alt="">
+                    <figcaption>さむくなってきたねえ</figcaption>
+                </figure>
+
+
+            </div>
+
+            <div id="right">▷
+                <a id="return" href="../kiroku.html">ほかの記録をみる</a>
+            </div>
+
+            <a id="pagetop" href="#">
+                <div id="pagetop_inner"></div>
+            </a>
+    </article>
+
+    <footer>
+        <small>&copy; Mei Takayama 2025 </small>
+    </footer>
+
+    <script>
+        const items = document.querySelectorAll('.img-item');
+
+        for (let i = 0; i < items.length; i++) {
+            const keyframes = {
+                opacity: [0, 1],
+            };
+
+            const options = {
+                duration: 3000,
+                delay: i * 500,
+                fill: 'forwards'
+            };
+
+            items[i].animate(keyframes, options);
+        };
+
+    </script>
+
+</body>
+
+</html>
